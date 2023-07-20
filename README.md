@@ -1,1 +1,0 @@
-# KangGiRim.github.io
