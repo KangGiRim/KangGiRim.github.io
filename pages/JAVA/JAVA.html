@@ -5,27 +5,59 @@ sidebar: java_sidebar
 permalink: java.html
 folder: java
 ---
-<div class="home">
 
-    <div class="post-list">
-        {% for post in site.posts limit:10 %}
+```java
+package com.ezen.spring.form;
 
+import java.util.*;
 
-    <h2><a class="post-link" href="{{ post.url | remove: "/" }}">{{ post.title }}</a></h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} /
-            {% for tag in post.tags %}
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-                <a href="{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+@Controller
+@RequestMapping("/form")
+public class FormController 
+{
+	@Autowired
+	private FormSvc formsvc; 
+	@GetMapping("/")
+	
+	@ResponseBody
+	public String index()
+	{
+		return "Hello";
+	}
+	
+	@GetMapping("/login")
+	public String loginForm()
+	{
+		return "login/loginForm";
+	}
+	
+	@PostMapping("/login")
+	@ResponseBody
+	public Map<String, Boolean> loginProc(User user)
+	{
+		boolean success = formsvc.login(user);
+		Map<String, Boolean> map = new HashMap<>();
+		map.put("login", success);
+		return map;
+	}
+	
+	// id, pwd를 파라미터로 받아서 users.txt 파일에 한 행으로 저장하고
+	// 그 결과를 성공/실패 메시지로 화면에 표시한다. 
+	@GetMapping("/save")
+	@ResponseBody
+	public Map<String, Boolean> save(User user)
+	{
+		return null;
+	}
+	
+}
 
-                {% endfor %}</span>
-        <p>{% if page.summary %} {{ page.summary | strip_html | strip_newlines | truncate: 160 }} {% else %} {{ post.content | truncatewords: 50 | strip_html }} {% endif %}</p>
-
-        {% endfor %}
-
-        <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
-
-<hr />
-        <p>See more posts from the <a href="news_archive.html">News Archive</a>. </p>
-
-    </div>
-</div>
+```
