@@ -2,17 +2,29 @@
 
 entries:
 - title: Sidebar
+  product: 커뮤니티
   levels: one
   folders:
 
   - title: Community
     output: web
+  
     folderitems:
-    - title: Community 1
-      url: /c1_landing_page.html
+
+    - title: JAVA
+      url: /java_landing_page.html
       output: web
-    - title: Community 2
-      url: /c2_landing_page.html
+    - title: PYTHON
+      url: /python_landing_page.html
+      output: web
+    - title: SQL
+      url: /sql_landing_page.html
+      output: web
+    - title: JSP
+      url: /jsp_landing_page.html
+      output: web
+    - title: SPRING
+      url: /spring_landing_page.html
       output: web
 
 # Copyright 2021 Google LLC
