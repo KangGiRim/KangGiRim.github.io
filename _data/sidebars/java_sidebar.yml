@@ -1,0 +1,25 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: 자바
+  levels: one
+  folders:
+
+  - title: java
+    output: web
+  
+    folderitems:
+
+    - title: 1
+      url: /1_landing_page.html
+      output: web
+    - title: 2
+      url: /2_landing_page.html
+      output: web
+    - title: 3
+      url: /3_landing_page.html
+      output: web
+    
+
+# Copyright 2021 Google LLC
