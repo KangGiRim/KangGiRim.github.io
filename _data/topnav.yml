@@ -9,6 +9,8 @@ topnav:
       url: /news
     - title: community
       url: /community
+    - title: Lee
+      url: /Lee
 
 #Topnav dropdowns
 topnav_dropdowns:
