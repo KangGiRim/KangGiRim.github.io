@@ -12,19 +12,19 @@ entries:
     folderitems:
 
     - title: JAVA
-      url: /java_landing_page.html
+      url: /java.html
       output: web
     - title: PYTHON
-      url: /python_landing_page.html
+      url: /python.html
       output: web
     - title: SQL
-      url: /sql_landing_page.html
+      url: /sql.html
       output: web
     - title: JSP
-      url: /jsp_landing_page.html
+      url: /jsp.html
       output: web
     - title: SPRING
-      url: /spring_landing_page.html
+      url: /spring.html
       output: web
 
 # Copyright 2021 Google LLC
