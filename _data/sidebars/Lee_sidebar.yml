@@ -12,10 +12,10 @@ entries:
     folderitems:
 
     - title: Sketch
-      url: Sketch.html
+      url: /Sketch.html
       output: web
     - title: Masterpiece
-      url: Masterpiece.html
+      url: /Masterpiece.html
       output: web
     
 # Copyright 2021 Google LLC
