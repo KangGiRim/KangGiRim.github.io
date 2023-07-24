@@ -11,11 +11,11 @@ entries:
   
     folderitems:
 
-    - title: Sketch
-      url: /Sketch.html
+    - title: sketch
+      url: /sketch.html
       output: web
-    - title: Masterpiece
-      url: /Masterpiece.html
+    - title: masterpiece
+      url: /masterpiece.html
       output: web
     
 # Copyright 2021 Google LLC
