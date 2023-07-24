@@ -1,0 +1,21 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: 리
+  levels: one
+  folders:
+
+  - title: Lee
+    output: web
+  
+    folderitems:
+
+    - title: Sketch
+      url: Sketch.html
+      output: web
+    - title: Masterpiece
+      url: Masterpiece.html
+      output: web
+    
+# Copyright 2021 Google LLC
