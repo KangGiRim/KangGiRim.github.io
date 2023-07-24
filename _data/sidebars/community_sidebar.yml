@@ -2,11 +2,11 @@
 
 entries:
 - title: Sidebar
-  product: 커뮤니티
+  product: community
   levels: one
   folders:
 
-  - title: Community
+  - title: community
     output: web
   
     folderitems:
